@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+	/* outline: 2px red solid; */
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+	margin: 0px;
+}
+
+/* ======================== Header ================================== */
+
+header {
+	/* position: sticky;
+	top: 10px; */
+	background-color: antiquewhite;
+	padding: 1vw 0vw;
+}
+
+header nav {
+
+	display: flex;
+	justify-content: space-between;
+	width: 80vw;
+	min-width: 400px;
+	max-width: 1200px;
+	margin: 0px auto;
+	align-items: center;
+
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	padding: 1vw;
+	border-radius: 5px;
+	transition: all 0.4s ease;
+}
+
+header nav a:hover {
+	background-color: rgb(111, 109, 109);
+	color: white;
+	transform: scale(5px);
+}
+
+header nav img {
+	width: 7vw;
+}
+
+/* ======================Eerste blok================================ */
+
+section.first h1 {
+	font-size: 4rem;
+	background-color: rgba(255, 228, 196, 0.377);
+}
+
+section.first p {
+	font-size: 2rem;
+	background-color: rgba(255, 228, 196, 0.377);
+}
+
+section.first {
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	color: rgb(0, 0, 0);
+	height: 35vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+
+	background-image: url(../img/Freshwater-Fishing-banner-1000x500-721900205.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section.first h1 {
+	font-size: 3rem;
+}
+
+/* ===================== Tweede Blok ======================================== */
+
+section.second {
+	text-align: center;
+	padding-bottom: 2vw;
+}
+
+section.second h2 {
+	font-size: 2rem;
+}
+
+section.second form {
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+	padding: 0vw 25vw;
+}
+
+section.second form input,
+textarea {
+	padding: 2vw;
+	/* outline: 1px solid black; */
+	/* border-radius: 10px; */
+	transition: all 0.4s ease;
+}
+
+section.second form input:hover,
+textarea:hover {
+	transform: scale(110%);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.288);
+}
+
+section.second form div {
+	justify-content: space-between;
+	display: flex;
+	gap: 1vw;
+	align-items: center;
+}
+
+section.second form div input {
+	flex: 1;
+}
+
+/* ======================== footer ======================================== */
+
+footer {
+	background-color: antiquewhite;
+	padding: 1vw 3vw;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	padding: 2vw;
+}
+
+footer img {
+	width: 7vw;
+}
+
+footer div.rubble {
+	display: flex;
+}
+
+#footerText {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+#footerText div:last-child {
+	align-content: center;
+}
+
+/* ============== media querries ========================================== */
+
+@media (max-width: 420px) {
+
+	/* *{
+    	outline: 2px red solid;
+		} */
+
+	section.first h1 {
+		font-size: 2rem;
+	}
+
+	section.first p {
+		font-size: 1rem;
+		font-weight: bold;
+
+	}
+
+	section.second form div {
+		flex-direction: column;
+	}
+
+	section.second form div.choose div {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	section.second form {
+		padding: 10vw;
+	}
+
+	section.second form div {
+		align-items: normal;
+	}
+
+	footer div.rubble {
+		flex-direction: column;
+	}
+
+	section.second form {
+		padding: 0vw, 25vh;
+	}
+
+}

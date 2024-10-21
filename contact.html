@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/styleContact.css">
+</head>
+
+<body>
+	<header>
+    	<nav>
+        	<div>
+            	<img src="./img/pastaCat.png" alt="pastaCat">
+        	</div>
+        	<div>
+            	<a href="./index.html">Main</a>
+            	<a href="./contact.html">Contact</a>
+            	<a href="https://eelslap.com/" target="_blank">Educatief</a>
+        	</div>
+    	</nav>
+	</header>
+	<main>
+    	<section class="first">
+        	<h1>Contact</h1>
+        	<p>Om mij te contacteren kunt u gebruik maken van het contactformulier hier beneden. <br> Voor informatie met hoge spoed kunt u tel: 31+ 0612345678 gebruiken.</p>
+    	</section>
+
+    	<section class="second">
+        	<h2>Contact formulier</h2>
+        	<div class="form">
+            	<form>
+                	<div>
+                    	<input required type="text" placeholder="Voornaam" name="first-name" id="first-name">
+                    	<input required type="text" placeholder="Achternaam" name="last-name" id="last-name">
+                	</div>
+
+                	<input required type="email" placeholder="Email" name="email" id="email">
+
+                	<div>
+                    	<input type="text" placeholder="Woonplaats" name="address" id="address">
+                    	<input required type="date" name="date" id="date">
+                	</div>
+
+                	<select required id="subject" name="subject">
+                    	<option value="" disabled selected>Kies een onderwerp</option>
+                    	<option value="Persoonlijk">Persoonlijk</option>
+                    	<option value="gVoorwerp">Gevonden eigendom/voorwerp</option>
+                    	<option value="zakelijk">Zakelijk</option>
+                	</select>
+
+                	<textarea required placeholder="Bericht" name="message" cols="35" rows="10" id="message"></textarea>
+
+                	<div>
+                    	<p>inschrijven voor nieuwsbrief?</p>
+                    	<div class="choose">
+                    	<input type="radio" id="yes" name="nieuws" value="yes">
+                    	<label for="yes">Ja</label>
+                    	</div>
+                    	<div class="choose">
+                    	<input type="radio" id="no" name="nieuws" value="no">
+                    	<label for="no">Nee</label>
+                    	</div>
+                	</div>
+
+                	<div>
+                    	<label for="voorwaarden">ga je akkoord met de algemene voorwaarden?</label>
+                    	<input required type="checkbox" id="voorwaarden" name="voorwaarden" value="accept">
+                	</div>
+
+                	<input type="submit">
+            	</form>
+        	</div>
+    	</section>
+
+	</main>
+
+	<footer>
+
+    	<img src="./img/pastaCat.png" alt="">
+
+    	<div id="footerText">
+        	<div>
+            	<p>copyright 2024 <br> Pasta INC.</p>
+        	</div>
+        	<div class="rubble">
+            	<a href="">Privacyverklaring</a>
+            	<a href="">Algemene voorwaarden</a>
+            	<a href="">Cookiebeleid</a>
+            	<a href="">Contact</a>
+        	</div>
+    	</div>
+
+	</footer>
+
+
+
+
+</body>
+
+</html>
